@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm-run-all --parallel watch vite",
-    "prepublishOnly": "build",
+    "prepublishOnly": "npm run build && npm run test",
     "watch": "tsc --watch",
     "vite": "vite --open",
     "vite:build": "vite build",
